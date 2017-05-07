@@ -1,0 +1,78 @@
+---
+---
+
+/*
+  while you can have a background image (set in _config.yml),
+  you should also set this fallback color
+
+  default: #464646;
+*/
+$background-color: #464646;
+
+/*
+  this is the background color for the project descriptions on the right side
+  you can also set the transparency level below!
+
+  defaults: #333, 0.5;
+*/
+$project-desc-color: #333;
+$project-desc-transp: 0.5;
+
+/*
+  here's your background image
+*/
+/*$background-image: url('/img/37311279_p0.jpg');*/
+$background-image: url('');
+
+/*
+  here's where you change the color of link text,
+  both the default color and hover color
+*/
+$link-color: #6DFFCE;
+$link-hover: #35ECAF;
+
+/*
+  this is the minimum width images can be in your home page gallery
+  so at 50% there can be two images before it makes a new row
+  at 30%, there can be three, etc
+
+  default: 50%;
+*/
+$min-gallery-width: 50%;
+
+/*
+  this is the aspect ratio of the images in your gallery
+
+  default: 70%;
+*/
+$gallery-height: 70%;
+
+/*
+  the max width of the site content,
+  i'd recommend not changing this,
+  but feel free to change it if you want
+
+  default: 1200px;
+*/
+$max-width: 1200px;
+
+$font-size: 16px;
+$font-family: 'Helvetica', sans-serif;
+$alt-font-family: monospace;
+$font-color: #fff;
+
+// Breakpoints. Use these in your media queries.
+$sm: 321px;
+$md: 769px;
+$lg: 1140px;
+$xl: 1300px;
+
+$twitter: #78cdf0 !default;
+$facebook: #537bbd !default;
+$instagram: #517fa4 !default;
+$youtube: #d34836 !default;
+$snapchat: #fffc00 !default;
+$pinterest: #cb2027 !default;
+$google: #dd4b39 !default;
+
+@import "main";

@@ -1,0 +1,152 @@
+
+body {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: $font-family;
+  color: $font-color;
+
+  background-color: $background-color;
+  background-image: $background-image;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 145%;
+}
+
+a:link, a:visited { color: $link-color; }
+a:hover, a:active { color: $link-hover; }
+
+
+header div {
+  max-width: $max-width;
+  margin: 32px auto;
+  margin-bottom: 0;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+
+  h1 {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+
+  a {
+    color: $font-color;
+    text-decoration: none;
+  }
+}
+
+main {
+  width: 95%;
+  max-width: $max-width;
+  margin: auto;
+}
+
+main.gallery {
+
+  .project {
+    display: flex;
+    margin: 32px 0;
+  }
+
+  .project .img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    cursor: zoom-in;
+
+    div {
+      flex-grow: 1;
+      min-width: $min-gallery-width;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      div {
+        padding-bottom: $gallery-height;
+      }
+    }
+  }
+
+  .project .desc {
+    width: 30%;
+    background: transparentize($project-desc-color, $project-desc-transp);
+
+    p, h1, h2, h3, h4, h5 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+
+}
+
+main.about {
+
+  max-width: 560px;
+
+  .bio {
+    margin: auto;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    display: inline;
+
+    a {
+      padding: 8px;
+      background: #333;
+      box-shadow: inset 0 -2px #000;
+    }
+  }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: zoom-out;
+  background: rgba(.9, .9, .9, .75);
+}
+
+.lightbox img {
+  max-width: calc(100% - 16px);
+  margin: auto;
+  height: auto;
+  display: block;
+  max-height: calc(100% - 16px);
+}
+
+
+@media screen and (max-width: $md) {
+  main.gallery {
+    .project {
+      flex-direction: column;
+
+      .desc, .img {
+        width: 100%;
+      }
+    }
+  }
+}

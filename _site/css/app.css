@@ -1,0 +1,144 @@
+/*
+  while you can have a background image (set in _config.yml),
+  you should also set this fallback color
+
+  default: #464646;
+*/
+/*
+  this is the background color for the project descriptions on the right side
+  you can also set the transparency level below!
+
+  defaults: #333, 0.5;
+*/
+/*
+  here's your background image
+*/
+/*$background-image: url('/img/37311279_p0.jpg');*/
+/*
+  here's where you change the color of link text,
+  both the default color and hover color
+*/
+/*
+  this is the minimum width images can be in your home page gallery
+  so at 50% there can be two images before it makes a new row
+  at 30%, there can be three, etc
+
+  default: 50%;
+*/
+/*
+  this is the aspect ratio of the images in your gallery
+
+  default: 70%;
+*/
+/*
+  the max width of the site content,
+  i'd recommend not changing this,
+  but feel free to change it if you want
+
+  default: 1200px;
+*/
+body {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  color: #fff;
+  background-color: #464646;
+  background-image: url("");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+
+img {
+  max-width: 100%; }
+
+p {
+  line-height: 145%; }
+
+a:link, a:visited {
+  color: #6DFFCE; }
+
+a:hover, a:active {
+  color: #35ECAF; }
+
+header div {
+  max-width: 1200px;
+  margin: 32px auto;
+  margin-bottom: 0;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+  header div h1 {
+    margin: 0;
+    margin-right: auto; }
+  header div nav {
+    margin-left: auto; }
+  header div a {
+    color: #fff;
+    text-decoration: none; }
+
+main {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto; }
+
+main.gallery .project {
+  display: flex;
+  margin: 32px 0; }
+main.gallery .project .img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  cursor: zoom-in; }
+  main.gallery .project .img div {
+    flex-grow: 1;
+    min-width: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    main.gallery .project .img div div {
+      padding-bottom: 70%; }
+main.gallery .project .desc {
+  width: 30%;
+  background: rgba(51, 51, 51, 0.5); }
+  main.gallery .project .desc p, main.gallery .project .desc h1, main.gallery .project .desc h2, main.gallery .project .desc h3, main.gallery .project .desc h4, main.gallery .project .desc h5 {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+main.about {
+  max-width: 560px; }
+  main.about .bio {
+    margin: auto; }
+  main.about ul {
+    padding: 0;
+    margin: 0; }
+  main.about ul li {
+    display: inline; }
+    main.about ul li a {
+      padding: 8px;
+      background: #333;
+      box-shadow: inset 0 -2px #000; }
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: zoom-out;
+  background: rgba(1, 1, 1, 0.75); }
+
+.lightbox img {
+  max-width: calc(100% - 16px);
+  margin: auto;
+  height: auto;
+  display: block;
+  max-height: calc(100% - 16px); }
+
+@media screen and (max-width: 769px) {
+  main.gallery .project {
+    flex-direction: column; }
+    main.gallery .project .desc, main.gallery .project .img {
+      width: 100%; } }

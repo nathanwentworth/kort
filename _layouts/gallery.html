@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<main class="gallery">
+{% for post in site.posts %}
+  <div class="project">
+    <div class="img">
+    {% for image in post.images %}
+      <div style="background-image: url('/img/{{ image }}');"><div></div></div>
+    {% endfor %}
+    </div>
+    <div class="desc">
+    <h2>{{ post.title }}</h2>
+    {{ post.content }}
+    </div>
+  </div>
+{% endfor %}
+</main>
+
+{% include lightbox.html %}
