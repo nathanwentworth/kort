@@ -11,11 +11,6 @@
   defaults: #333, 0.5;
 */
 /*
-  here's your background image
-*/
-/*$background-image: url('/img/37311279_p0.jpg');*/
-/*$background-image: url('');*/
-/*
   here's where you change the color of link text,
   both the default color and hover color
 */
@@ -45,7 +40,6 @@ body {
   font-family: "Helvetica", sans-serif;
   color: #fff;
   background-color: #464646;
-  background-image: url("https://static.wixstatic.com/media/9724e5a0e7b726020d137b111fa7e916.jpg/v1/fill/w_1920,h_1920,al_b,q_85/9724e5a0e7b726020d137b111fa7e916.webp");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
